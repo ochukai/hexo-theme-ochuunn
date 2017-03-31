@@ -11,23 +11,23 @@
 * Google Search Console
 * Google Analytics
 * Disqus
-* Live2d WebGL
+* Live2d WebGL (比较大，可能会导致页面加载变慢~)
 * Hotjar
 * Reward
 
 ## Install
 1. In the `root` directory:
 
-    ```git
-    $ git clone https://github.com/ochukai/hexo-theme-ochuunn.git themes/ochuunn
-    ```
+```git
+$ git clone https://github.com/ochukai/hexo-theme-ochuunn.git themes/ochuunn
+```
 
 2. Change the `theme` property in the `config.yml` file.
 
-    ```yml
-    # theme: landscape
-    theme: ochuunn
-    ```
+```yml
+# theme: landscape
+theme: ochuunn
+```
 
 3. Run: `hexo generate` and `hexo server`
 
