@@ -1,0 +1,77 @@
+.highlight
+  overflow: auto
+  // background-color: $highlight-background
+  color: $highlight-foreground
+  border: 1px solid $border-color
+
+  .gutter
+    color: #666
+    display: none
+
+  .code
+    padding: 1em 45px
+
+  figcaption
+    margin-bottom: 1em
+    color: #999
+    font-size: .85em
+    a
+      float: right
+
+  .comment
+    color: $highlight-comment
+    
+  .title
+    color: $highlight-title
+
+  .variable
+  .attribute
+  .tag
+  .regexp
+  .ruby .constant
+  .xml .tag .title
+  .xml .pi
+  .xml .doctype
+  .html .doctype
+  .css .id
+  .css .class
+  .css .pseudo
+    color: $highlight-green
+
+  .number
+  .preprocessor
+  .built_in
+  .literal
+  .params
+  .constant
+    color: $highlight-orange
+
+  .class
+  .ruby .class .title
+  .css .rules .attribute
+    color: $highlight-green
+
+  .string
+  .value
+  .inheritance
+  .header
+  .ruby .symbol
+  .xml .cdata
+    color: $highlight-green
+
+  .css .hexcolor
+    color: $highlight-aqua
+
+  .function
+  .python .decorator
+  .python .title
+  .ruby .function .title
+  .ruby .title .keyword
+  .perl .sub
+  .javascript .title
+  .coffeescript .title
+    color: $highlight-func-keyword
+
+  .keyword
+  .javascript .function
+    color: $highlight-purple

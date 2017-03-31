@@ -1,0 +1,200 @@
+.live2d
+  position: fixed
+  bottom: -30px
+  right: 0px
+  z-index: 999
+  width: 150px
+  height: 300px
+  pointer-events: none
+  
+.reward
+  border: 1px solid $border-color
+  padding: 20px
+  text-align: center
+  margin-top: 20px
+  background-color: #fff
+  
+  .btn-reward
+    padding: 10px 20px
+    background-color: #399c9c
+    color: $content-bg-color
+    display: inline-block
+    transition: all .3s
+
+    &:hover
+      background-color: $color-green-hover
+  
+  .reward-wrapper
+    margin-top: 20px
+    display: none
+
+    img
+      width: 200px
+      height: 200px
+      border: 1px solid $border-color
+      margin: 0 10px
+
+.post
+  overflow: hidden
+  margin-top: 30px
+  border: 1px solid $border-color
+  background-color: $content-bg-color
+  opacity: 0    
+  transition: all .3s;
+
+  &:hover
+    box-shadow: 0 1px 6px rgba(0,0,0,.2)
+    border-color: transparent
+
+.post__head
+  margin: $margin-left-right
+
+  &.archive
+    margin: 30px $margin-left-right
+
+.post__time
+  color: #CCCCCC
+  font-size-rem(12)
+
+.post__title
+  margin-top: 5px
+  line-height: 1.5
+  font-size-rem(24)
+  font-weight: normal
+
+  > a
+    color: #666
+    transition: all .3s
+
+    &:hover
+      color: #9c396b
+      text-shadow: 1px 1px 1px #ddd
+
+.post__image
+  display: block
+  // cursor: pointer
+  margin: $margin-left-right 0
+
+.post__main
+  margin-top: $margin-left-right
+
+  .headerlink
+    display: inline-block
+
+  img
+    cursor: pointer
+    transition: all .3s
+
+    &:hover
+     box-shadow: 0 0 1px #ccc
+
+  .highlight
+    margin: 1.6em -60px
+    padding: 15px
+
+    figcaption
+      padding: 0 30px
+
+    table
+      margin: 0
+      width: auto
+      border: none
+
+    td
+    th
+      border: none
+
+    pre
+      margin: 0
+
+  h1
+    // 1.6 * 16
+    font-size-rem(25.6)
+
+  h2
+    // 1.4 * 16
+    font-size-rem(22.4)
+
+  h3
+    // 1.2 * 16
+    font-size-rem(19.2)
+
+  img
+    // display: block
+    margin: 1.6em auto
+
+.post__foot
+  padding: 8px $margin-left-right
+  border-top: 1px solid $border-color
+  background-color: $background-color
+
+.post__foot-link
+  padding: 10px 15px 10px 0
+  color: #3CB371
+  font-size-rem(14)
+
+.post__tag__item
+  display: inline-block
+
+.post__tag__link
+  @extend .post__foot-link
+  transition: all .3s
+  display: block
+
+  &:hover
+    color: #9c396b
+
+  &:before
+    content: "#"
+
+.post__more
+  @extend .post__foot-link
+  padding: 10px 20px
+  border: 1px solid $border-color
+  border-radius: 3px
+  background-color: #CCCCCC
+  color: #FFFFFF
+
+  &:hover
+    background-color: #DDDDDD
+
+
+
+.queue-in 
+  animation-name: queue-in
+  animation-duration: .3s
+  animation-fill-mode: forwards
+  animation-timing-function: ease-in
+
+.queue-out 
+  animation-name: queue-out
+  animation-duration: .3s
+  animation-fill-mode: forwards
+  animation-timing-function: ease-out
+
+@keyframes queue-in {
+  from { 
+    // opacity: .5;
+    // margin-left: 40px;
+    transform: translateX(40px);
+  }
+  
+  to { 
+    opacity: 1;
+    transform: translateX(0); 
+  }
+}
+
+
+@keyframes queue-out {
+  from { 
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  to { 
+    opacity: 0;
+    display: none;
+    transform: translateX(40px); 
+  }
+}

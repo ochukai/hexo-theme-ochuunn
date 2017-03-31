@@ -1,0 +1,15 @@
+include _views/post
+include _views/menu
+extends _views/main
+
+block main
+  -page.posts.each(function(post){
+    +post(post, 'tag')
+  -})
+
+block head
+  title
+    = page.tag + ' - ' + config.title
+
+block menu
+  +menu('tag')

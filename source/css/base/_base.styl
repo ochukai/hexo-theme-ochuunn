@@ -1,0 +1,28 @@
+html
+  background-color $html-bg-color
+  // background-image: url(../img/bg-1.png)
+  background-attachment: fixed
+  background-repeat: no-repeat
+  background-size: auto
+  // background-position: 50% 0
+  color: $base-font-color
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+
+html.index
+  background-color $content-bg-color
+
+// html
+//   font-size: 62.5%
+
+body
+  font-size-rem($base-font-size)
+  line-height: $base-line-height
+  font-family: $base-font-family
+
+code, kbd, pre, samp
+    font-family: $base-code-font-family
+
+a
+  color: $base-link-color
+  text-decoration: none

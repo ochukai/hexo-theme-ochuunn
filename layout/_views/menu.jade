@@ -1,0 +1,13 @@
+mixin menu(index)
+  if index != 'archive'
+    menu.page-menu.u-fr
+      li.page-menu__item
+        if page.prev
+          a.page-menu__link.icon-arrow-left(title = 'Previous', href = config.root + (page.prev.path || page.prev_link))
+        else
+          span.page-menu__link.icon-arrow-left.page-menu__link--disabled(title = 'Previous')
+      li.page-menu__item
+        if page.next
+          a.page-menu__link.icon-arrow-right(title = 'Next', href= config.root + (page.next.path || page.next_link))
+        else
+          span.page-menu__link.icon-arrow-right.page-menu__link--disabled(title = 'Next')

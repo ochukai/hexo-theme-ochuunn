@@ -1,0 +1,21 @@
+doctype html
+html(lang="zh-CN")
+  head
+    include head
+  body
+    header.head(style="opacity:0")
+      h1.head-title.u-fl: a(href = config.root)
+        = config.title
+      include nav
+      
+    main.main
+      block main
+    
+    footer.foot
+      div.foot-copy.u-fl
+        != '&copy; ' + theme.start_year + '-' + date(new Date(), 'YYYY') + ' ' + (config.author || config.title)
+        if config.author === 'Oliver'
+          a(href="http://www.beianbaba.com/icp/ochukai.me" target="view_window" style="color:#fff")
+            != '（鲁ICP备16006255号-1）'
+      block menu
+    include foot

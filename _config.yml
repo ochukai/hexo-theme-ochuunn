@@ -1,0 +1,22 @@
+# head
+menu:
+  カタログ/（目录）: /archives
+
+rss: /atom.xml
+favicon: /favicon.png
+
+date_format: 'MMMM D, YYYY'
+
+google_verification: -zz_UiN3Z6szo1tjCMg8H66_XeAH2-dL2KLimiLJ0Ak
+google_analytics: UA-73840162-1
+
+disqus_shortname: ochukai
+
+live2d: true
+hjid: 452159
+
+start_year: 2016
+
+reward_image:
+# reward_image: /img/wechat.png
+
