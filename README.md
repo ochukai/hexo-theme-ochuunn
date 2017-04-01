@@ -14,6 +14,8 @@
 * Live2d WebGL (比较大，可能会导致页面加载变慢~)
 * Hotjar
 * Reward
+* 页面滚动快捷键(j,k,t,b,n,m 具体功能自己尝试)
+
 
 ## Install
 1. In the `root` directory:
