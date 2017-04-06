@@ -24,6 +24,11 @@
 $ git clone https://github.com/ochukai/hexo-theme-ochuunn.git themes/ochuunn
 ```
 
+```sh
+# fix issue #1
+npm install hexo-renderer-jade --save
+```
+
 2. Change the `theme` property in the `config.yml` file.
 
 ```yml
