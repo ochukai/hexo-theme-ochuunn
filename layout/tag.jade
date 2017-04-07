@@ -4,7 +4,7 @@ extends _views/main
 
 block main
   -page.posts.each(function(post){
-    +post(post, 'tag')
+    +post(post, 'archive')
   -})
 
 block head

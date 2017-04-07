@@ -53,8 +53,14 @@ Add these code to your package.json
 
 After you do this, just run `npm start` to debug your site and run `npm run deploy` to deploy your site.
 
+## 不足
+
+* 不支持 link 类型的文章
+* 不支持 category，只有 tag
+* 图片预览实在太丑，删掉了~
+
 ## 使用者列表
 (使用本主题之后，可以直接修改 README.md 文件，系统会自动提 pr 给我的，我来负责合并)
 
--
--
+* [I am Oliver](http://ochukai.me)
+* （待补充）

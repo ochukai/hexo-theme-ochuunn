@@ -3,10 +3,17 @@ mixin post(post, index)
   article.post
     if index === 'archive'
       header.post__head.archive
-        time.post__time(datetime = date_xml(post.date))
-          = date(post.date, theme.date_format)
+        a(href = config.root + post.path)
+          time.post__time(datetime = date_xml(post.date))
+            = date(post.date, theme.date_format)
+            
         h1.post__title.archive: a(href = config.root + post.path)
           = post.title
+
+        if post.excerpt
+          div.excerpt
+            != post.excerpt
+
     else
       header.post__head   
         time.post__time(datetime = date_xml(post.date))
@@ -19,10 +26,7 @@ mixin post(post, index)
           a.post__image(href = config.root + post.path): img(src = post.img, alt = 'featured-image')
 
         div.post__main.echo
-          if post.excerpt && index == 'index'
-            != post.excerpt
-          else
-            != post.content
+          != post.content
 
     if post.tags && post.tags.length > 0
       footer.post__foot.u-cf

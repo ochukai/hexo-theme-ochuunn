@@ -1,28 +1,4 @@
 $(function () {
-	// console.log('I am Oliver~');
-
-	// image preview
-	$('.post__main img').each(function (index, item) {
-		var $img = $(this);
-		var className = 'modalBox' + index;
-
-		var $tpl = $('<div />');
-		$tpl.addClass('modalBox').addClass(className).append($($img.prop('outerHTML')));
-		$tpl.hide();
-
-		$img.on('click', function () {
-			$tpl.modalBox({
-				onOpen: function () {
-					$('body').addClass('modal-open');
-				},
-				onClose: function () {
-					$('body').removeClass('modal-open');
-				}
-			});
-		});
-
-		$('body').append($tpl);
-	});
 
 	// key bind
 
@@ -132,17 +108,5 @@ $(function () {
 		$reward.slideToggle();
 	});
 
-	$('header.head').addClass('queue-in');
-	$('article.post').each(function (index) {
-		var $this = $(this);
-
-    if (index < 6) {
-  		$this.css({
-  			'animationDelay': .1 * (index + 1) + 's'
-  		});
-    }
-
-		$this.addClass('queue-in');
-	});
-
+	$('body').addClass('queue-in');
 });

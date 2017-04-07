@@ -2,8 +2,8 @@ doctype html
 html(lang="zh-CN")
   head
     include head
-  body
-    header.head(style="opacity:0")
+  body(style="opacity:0")
+    header.head
       h1.head-title.u-fl: a(href = config.root)
         = config.title
       include nav

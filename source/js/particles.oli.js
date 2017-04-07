@@ -28,7 +28,7 @@ $(function () {
                 // }
             },
             "opacity": {
-                "value": 0.4,
+                "value": 0.3,
                 "random": false,
                 "anim": {
                     "enable": false,
@@ -51,7 +51,7 @@ $(function () {
                 "enable": true,
                 "distance": 250,
                 "color": "#40afaf",
-                "opacity": 0.5,
+                "opacity": 0.3,
                 "width": 1
             },
             "move": {
@@ -115,7 +115,7 @@ $(function () {
         e.preventDefault();
         
         $particle.fadeOut(600);
-        $navH1.fadeOut(600);
+        $navH1.fadeOut(100);
 
         $header.animate({
             height: 0
