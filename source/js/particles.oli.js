@@ -113,6 +113,7 @@ $(function () {
 
     $('.head-nav__link').on('click', function(e) {
         e.preventDefault();
+        var $this = $(this);
         
         $particle.fadeOut(600);
         $navH1.fadeOut(100);
@@ -120,7 +121,7 @@ $(function () {
         $header.animate({
             height: 0
         }, 800, function() {
-            window.location.href = '/archives';
+            window.location.href = $this.attr('href');
         });
     });
 

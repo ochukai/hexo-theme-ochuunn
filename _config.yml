@@ -1,6 +1,8 @@
 # head
 menu:
   カタログ/（目录）: /archives
+  # sitemap: /sitemap.xml
+  # other menus
 
 rss: /atom.xml
 favicon: /favicon.png
