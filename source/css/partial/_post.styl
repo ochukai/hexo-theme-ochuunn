@@ -42,11 +42,6 @@
   margin-top: 30px
   border: 1px solid $border-color
   background-color: $content-bg-color   
-  transition: all .3s;
-
-  &:hover
-    box-shadow: 0 1px 6px rgba(0,0,0,.2)
-    border-color: transparent
 
 .post__head
   margin: $margin-left-right
@@ -161,6 +156,27 @@
     background-color: #DDDDDD
 
 
+.gallery
+  margin-bottom: 45px
+
+  a
+    display: inline-block 
+    width: 100%
+    
+    &:focus
+      outline: 0
+
+    img
+      width: 100%
+
+
+.video-container
+  width: 100%
+
+  iframe
+    width: 100%
+    min-height: 320px
+   
 
 .queue-in 
   animation-name: queue-in

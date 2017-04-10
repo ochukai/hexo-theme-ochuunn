@@ -1,0 +1,7 @@
+mixin gallery(post, index)
+
+  if post.photos && post.photos.length
+    div.gallery#gallery
+      each item, index in post.photos
+        - var className = index === 0 ? '' : 'u-hidden'
+        a(href = item, data-fancybox, group='oli-image-gallery' class = className): img(src = item, alt='featured-image')

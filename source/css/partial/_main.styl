@@ -39,11 +39,6 @@
   line-height: (@height)
   box-sizing: border-box
 
-.head
-  margin-top: 80px
-  &.index
-   margin: 0
-
 .head-title
   font-size-rem(30)
   font-weight: normal
@@ -118,3 +113,12 @@
 .right p
   text-align: right
 
+.reward,
+.comments,
+.post
+  transition: all .3s
+  // box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2), 0 1px 1px 0 rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12)
+
+  &:hover
+    box-shadow: 0 1px 6px rgba(0,0,0,.2)
+    border-color: transparent

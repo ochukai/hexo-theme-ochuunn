@@ -1,5 +1,22 @@
 $(function () {
 
+	$('.post__main p > img').on('click', function () {
+		console.log(this);
+		var $img = $(this);
+
+		$.fancybox.open([{
+			src: $img.attr('src'),
+			type: 'image'
+		}]);
+	});
+
+	$('[data-fancybox]').fancybox({
+		// closeClickOutside: false, 
+		image: {
+			protect: true
+		}
+	});
+
 	// key bind
 
 	// j  down
@@ -109,4 +126,8 @@ $(function () {
 	});
 
 	$('body').addClass('queue-in');
+	setTimeout(function() {
+		$('body').css({ opacity: 1}).removeClass('queue-in');
+	}, 500);
+
 });

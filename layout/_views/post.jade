@@ -1,3 +1,5 @@
+include gallery
+
 mixin post(post, index)
 
   article.post
@@ -16,6 +18,8 @@ mixin post(post, index)
 
     else
       header.post__head   
+        +gallery(post)
+        
         time.post__time(datetime = date_xml(post.date))
           = date(post.date, theme.date_format)
 
