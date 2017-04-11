@@ -64,4 +64,5 @@ After you do this, just run `npm start` to debug your site and run `npm run depl
 (使用本主题之后，可以直接修改 README.md 文件，系统会自动提 pr 给我的，我来负责合并)
 
 * [I am Oliver](http://ochukai.me)
+* [lusixstar.github.io](https://lusixstar.github.io)    -- 不小心看到的~
 * （待补充）
