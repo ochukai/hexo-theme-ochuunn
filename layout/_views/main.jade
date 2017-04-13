@@ -16,7 +16,7 @@ html(lang="zh-CN")
         if theme.start_year != date(new Date(), 'YYYY')
           != '&copy; ' + theme.start_year + '-' + date(new Date(), 'YYYY') + ' ' + (config.author || config.title)
         else
-          = '&copy; ' + date(new Date(), 'YYYY') + ' ' + (config.author || config.title)
+          != '&copy; ' + date(new Date(), 'YYYY') + ' ' + (config.author || config.title)
         if config.author === 'Oliver'
           a(href="http://www.beianbaba.com/icp/ochukai.me" target="view_window" style="color:#fff")
             != '（鲁ICP备16006255号-1）'
