@@ -1,12 +1,12 @@
 doctype html
 html(lang="zh-CN")
   head
-    include head
+    include head.pug
   body(style="opacity:0")
     header.head
       h1.head-title.u-fl: a(href = config.root)
         = config.title
-      include nav
+      include nav.pug
       
     main.main
       block main
@@ -21,4 +21,4 @@ html(lang="zh-CN")
           a(href="http://www.beianbaba.com/icp/ochukai.me" target="view_window" style="color:#fff")
             != '（鲁ICP备16006255号-1）'
       block menu
-    include foot
+    include foot.pug

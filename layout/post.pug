@@ -1,8 +1,6 @@
-include _views/post
-include _views/menu
-extends _views/main
-
+extends _views/main.pug
 block main
+  include _views/post.pug
   +post(page, 'post')
   
   if theme.reward_image
@@ -16,10 +14,9 @@ block main
       div#disqus_thread
         noscript.
           Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
-
 block head
   title
     = page.title + ' - ' + config.title
-
 block menu
+  include _views/menu.pug
   +menu('post')

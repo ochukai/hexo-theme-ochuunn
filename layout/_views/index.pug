@@ -1,14 +1,14 @@
 doctype html
 html.index(lang="zh-CN")
   head
-    include head
+    include head.pug
   body    
     #particles-oli-wrapper.hide
     .index-wrapper
       header.head.index.hide
         h1.head-title.u-fl
           = config.title
-        include nav
+        include nav.pug
 
     script(src='/js/particles.min.js')
     script(src='/js/particles.oli.js')

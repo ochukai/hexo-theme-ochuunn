@@ -1,8 +1,6 @@
-include _views/post
-include _views/menu
-extends _views/main
-
+extends _views/main.pug
 block main
+  include _views/post.pug
   -page.posts.each(function(post){
     +post(post, 'archive')
   -})
@@ -12,4 +10,5 @@ block head
     = page.tag + ' - ' + config.title
 
 block menu
+  include _views/menu.pug
   +menu('tag')
