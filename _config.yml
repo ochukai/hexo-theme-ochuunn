@@ -10,13 +10,18 @@ favicon: /favicon.png
 date_format: 'MMMM D, YYYY'
 
 google_verification: false  # your token
-google_analytics: false     # your id
+google_analytics: false   # your id
 
-disqus_shortname: false     # your disqus name
+disqus_shortname: false   # your disqus name
 
 live2d: false    # true
 hjid: false      # your hjid (hotjar)
 
 start_year: 2016
 
-reward_image: /img/wechat.png
+reward_images: 
+- type: '微信'
+  url: '/img/wechat.png'
+# - type: '支付宝' 
+#   url: '/img/wechat.png'
+ 
