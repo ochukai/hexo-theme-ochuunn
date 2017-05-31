@@ -53,6 +53,19 @@ Add these code to your package.json
 
 After you do this, just run `npm start` to debug your site and run `npm run deploy` to deploy your site.
 
+## Live2d
+
+如果要使用 live2d , 可以在 hexo 的配置文件 _config.xml (不是当前主题的 _config.xml) 里面加入这样的参数来选择要显示的 model:
+
+```yml
+live2d:
+  model: nipsilon # 名字当然不是随便写了~ 看下面的链接吧~
+  bottom: -60
+```
+
+链接: [github/hexo-helper-live2d](https://github.com/EYHN/hexo-helper-live2d)
+
+
 ## 不足
 
 * 不支持 link 类型的文章
@@ -61,19 +74,9 @@ After you do this, just run `npm start` to debug your site and run `npm run depl
 (在目录的最下面， 是 hexo 的测试文章，按 b 键直达~)
 
 ## 使用者列表
+
 (使用本主题之后，可以直接修改 README.md 文件，系统会自动提 pr 给我的，我来负责合并)
 
 * [I am Oliver](http://ochukai.me)
 * [Zacco's Blog](https://blog.zacco.site)
 * （待补充）
-
-
-## 如果要使用 live2d , 可以在 hexo 的配置文件 _config.xml 里面加入这样的参数来选择 model:
-
-```yml
-live2d:
-  model: nipsilon
-  bottom: -60
-```
-
-链接: [github/hexo-helper-live2d](https://github.com/EYHN/hexo-helper-live2d)
