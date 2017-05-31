@@ -1,6 +1,6 @@
 # head
 menu:
-  カタログ/（目录）: /archives
+  目录: /archives
   # sitemap: /sitemap.xml
   # other menus
 
@@ -9,12 +9,12 @@ favicon: /favicon.png
 
 date_format: 'MMMM D, YYYY'
 
-google_verification: -zz_UiN3Z6szo1tjCMg8H66_XeAH2-dL2KLimiLJ0Ak  # your token
-google_analytics: UA-73840162-1   # your id
+google_verification: false  # your token
+google_analytics: false   # your id
 
-disqus_shortname: ochukai   # your disqus name
+disqus_shortname: false   # your disqus name
 
-live2d: true    # true
+live2d: false    # true
 
 hjid: false      # your hjid (hotjar)
 

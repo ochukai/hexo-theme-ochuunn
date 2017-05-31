@@ -1,0 +1,4 @@
+if theme.disqus_shortname && !env.debug
+  - var disqus_type = page.comments ? 'embed' : 'count'
+  script.
+    (function(h,g,l,k,j,i){j=h.createElement(g),i=h.getElementsByTagName(g)[0],j.src="//"+l+".disqus.com/"+k+".js",i.parentNode.insertBefore(j,i)})(document,"script","#{theme.disqus_shortname}","#{disqus_type}");

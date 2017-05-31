@@ -1,0 +1,7 @@
+if theme.reward_images
+  section.reward 
+    a(class="btn-reward" href="#") 打赏
+    div.reward-wrapper.clearfix
+      -theme.reward_images.forEach(function(img) {
+        img(src = img.url, title = img.type || '')
+      -})

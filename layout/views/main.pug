@@ -2,6 +2,7 @@ doctype html
 html(lang="zh-CN")
   head
     include head.pug
+
   body(style="opacity:0")
     header.head
       h1.head-title.u-fl: a(href = config.root)
@@ -12,13 +13,20 @@ html(lang="zh-CN")
       block main
     
     footer.foot
-      div.foot-copy.u-fl
+      div.foot-copy
         if theme.start_year != date(new Date(), 'YYYY')
           != '&copy; ' + theme.start_year + '-' + date(new Date(), 'YYYY') + ' ' + (config.author || config.title)
         else
           != '&copy; ' + date(new Date(), 'YYYY') + ' ' + (config.author || config.title)
-        if config.author === 'Oliver'
+        
+        //- 我自己才会显示
+        if config.author === 'Oliver Wang'
           a(href="http://www.beianbaba.com/icp/ochukai.me" target="view_window" style="color:#fff")
             != '（鲁ICP备16006255号-1）'
-      block menu
-    include foot.pug
+
+    include ../plugins/disqus.pug
+    include ../plugins/google.pug
+    include ../plugins/live2d.pug
+    
+    != js('js/scroller')
+    != js('js/main')

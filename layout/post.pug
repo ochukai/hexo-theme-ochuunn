@@ -1,26 +1,12 @@
-extends _views/main.pug
-block main
-  include _views/post.pug
-  +post(page, 'post')
-  
-  if theme.reward_images
-    section.reward 
-      a(class="btn-reward" href="#") 打赏
-      div.reward-wrapper.clearfix
-        -theme.reward_images.forEach(function(img) {
-          img(src = img.url, title = img.type || '')
-        -})
-
-  if theme.disqus_shortname && page.comments && !env.debug
-    div.comments
-      div#disqus_thread
-        noscript.
-          Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
+extends views/main.pug
 
 block head
   title
     = page.title + ' - ' + config.title
 
-block menu
-  include _views/menu.pug
-  +menu('post')
+block main
+  include mixins/post.pug
+  +post(page, 'post')
+  
+  include plugins/reward.pug
+  include plugins/use-disqus.pug
