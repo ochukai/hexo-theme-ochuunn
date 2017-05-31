@@ -13,8 +13,8 @@ if theme.google_analytics && !env.debug
 script(src='/js/scroller.js')
 script(src='/js/main.js')
 
-if theme.live2d && !env.debug
-  canvas#live2dcanvas(width="400", height="800", class="live2d")
-  != live2d("live2dcanvas")
+if theme.live2d
+  canvas#live2dcanvas.live2d(width="400", height="800")
+  != live2d({id: "live2dcanvas"})
 
 block foot

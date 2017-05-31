@@ -16,10 +16,14 @@
 * Reward
 * 页面滚动快捷键(j,k,t,b,n,m 具体功能自己尝试)
 
-# 这里很重要
+# ⚠ 这里很重要 💢💥💖
 
 ```sh
 npm install hexo-renderer-pug --save
+
+
+## 如果要用到 live2d, 安装这个, 不用就算了~
+npm install -save hexo-helper-live2d
 ```
 
 ## Install
@@ -36,9 +40,8 @@ $ git clone https://github.com/ochukai/hexo-theme-ochuunn.git themes/ochuunn
 theme: ochuunn
 ```
 
-3. Run: `hexo generate` and `hexo server`
+3. Run: `npm start`
 
-## Tips
 Add these code to your package.json
 
 ```js
@@ -63,3 +66,14 @@ After you do this, just run `npm start` to debug your site and run `npm run depl
 * [I am Oliver](http://ochukai.me)
 * [Zacco's Blog](https://blog.zacco.site)
 * （待补充）
+
+
+## 如果要使用 live2d , 可以在 hexo 的配置文件 _config.xml 里面加入这样的参数来选择 model:
+
+```yml
+live2d:
+  model: nipsilon
+  bottom: -60
+```
+
+链接: [github/hexo-helper-live2d](https://github.com/EYHN/hexo-helper-live2d)

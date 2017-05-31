@@ -9,12 +9,13 @@ favicon: /favicon.png
 
 date_format: 'MMMM D, YYYY'
 
-google_verification: false  # your token
-google_analytics: false   # your id
+google_verification: -zz_UiN3Z6szo1tjCMg8H66_XeAH2-dL2KLimiLJ0Ak  # your token
+google_analytics: UA-73840162-1   # your id
 
-disqus_shortname: false   # your disqus name
+disqus_shortname: ochukai   # your disqus name
 
-live2d: false    # true
+live2d: true    # true
+
 hjid: false      # your hjid (hotjar)
 
 start_year: 2016
@@ -24,4 +25,3 @@ reward_images:
   url: '/img/wechat.png'
 # - type: '支付宝' 
 #   url: '/img/wechat.png'
- 
