@@ -14,10 +14,6 @@ google_analytics: false   # your id
 
 disqus_shortname: false   # your disqus name
 
-live2d: false    # true
-
-hjid: false      # your hjid (hotjar)
-
 start_year: 2016
 
 reward_images: 
