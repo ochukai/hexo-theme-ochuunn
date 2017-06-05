@@ -1,7 +1,6 @@
 $(function () {
 
 	$('.post__main p > img').on('click', function () {
-		console.log(this);
 		var $img = $(this);
 
 		$.fancybox.open([{

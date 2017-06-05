@@ -11,7 +11,6 @@
 * Google Search Console
 * Google Analytics
 * Disqus
-* Live2d WebGL (比较大，可能会导致页面加载变慢~)
 * Hotjar
 * Reward
 * 页面滚动快捷键(j,k,t,b,n,m 具体功能自己尝试)
@@ -52,19 +51,6 @@ Add these code to your package.json
 ```
 
 After you do this, just run `npm start` to debug your site and run `npm run deploy` to deploy your site.
-
-## Live2d
-
-如果要使用 live2d , 可以在 hexo 的配置文件 _config.xml (不是当前主题的 _config.xml) 里面加入这样的参数来选择要显示的 model:
-
-```yml
-live2d:
-  model: nipsilon # 名字当然不是随便写了~ 看下面的链接吧~
-  bottom: -60
-```
-
-链接: [github/hexo-helper-live2d](https://github.com/EYHN/hexo-helper-live2d)
-
 
 ## 不足
 
