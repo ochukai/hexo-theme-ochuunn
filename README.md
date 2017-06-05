@@ -11,18 +11,13 @@
 * Google Search Console
 * Google Analytics
 * Disqus
-* Hotjar
-* Reward
-* 页面滚动快捷键(j,k,t,b,n,m 具体功能自己尝试)
+* 打赏
+* 🎈 页面滚动快捷键 (j, k, t, b, n, m 具体功能自己尝试, console 有提示~)
 
 # ⚠ 这里很重要 💢💥💖
 
 ```sh
 npm install hexo-renderer-pug --save
-
-
-## 如果要用到 live2d, 安装这个, 不用就算了~
-npm install -save hexo-helper-live2d
 ```
 
 ## Install
@@ -50,7 +45,7 @@ Add these code to your package.json
 },
 ```
 
-After you do this, just run `npm start` to debug your site and run `npm run deploy` to deploy your site.
+Run `npm start` to debug your site and run `npm run deploy` to deploy your site.
 
 ## 不足
 
@@ -61,7 +56,7 @@ After you do this, just run `npm start` to debug your site and run `npm run depl
 
 ## 使用者列表
 
-(使用本主题之后，可以直接修改 README.md 文件，系统会自动提 pr 给我的，我来负责合并)
+(使用本主题之后，可以直接修改 README.md 文件，系统会自动提 pr 给我的，我来合并)
 
 * [I am Oliver](http://ochukai.me)
 * [Zacco's Blog](https://blog.zacco.site)
