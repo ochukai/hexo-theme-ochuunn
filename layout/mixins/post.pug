@@ -1,5 +1,3 @@
-include gallery.pug
-
 mixin post(post, index)
 
   article.post
@@ -17,7 +15,8 @@ mixin post(post, index)
             != post.excerpt
 
     else
-      header.post__head   
+      header.post__head  
+        include gallery.pug 
         +gallery(post)
         
         time.post__time(datetime = date_xml(post.date))

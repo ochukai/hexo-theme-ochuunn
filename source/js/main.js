@@ -1,6 +1,6 @@
 $(function () {
 
-	$('.post__main p > img').on('click', function () {
+	$('.post__main img').on('click', function () {
 		var $img = $(this);
 
 		$.fancybox.open([{
