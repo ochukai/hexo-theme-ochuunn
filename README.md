@@ -34,19 +34,6 @@ $ git clone https://github.com/ochukai/hexo-theme-ochuunn.git themes/ochuunn
 theme: ochuunn
 ```
 
-3. Run: `npm start`
-
-Add these code to your package.json
-
-```js
-"scripts": {
-  "deploy": "hexo clean && hexo generate && hexo deploy",
-  "start": "hexo clean && hexo s --debug"
-},
-```
-
-Run `npm start` to debug your site and run `npm run deploy` to deploy your site.
-
 ## 不足
 
 * 不支持 link 类型的文章
@@ -59,5 +46,5 @@ Run `npm start` to debug your site and run `npm run deploy` to deploy your site.
 (使用本主题之后，可以直接修改 README.md 文件，系统会自动提 pr 给我的，我来合并)
 
 * [I am Oliver](http://ochukai.me)
-* [Zacco's Blog](https://blog.zacco.site)
+* [Zacco's Blog](https://zacco.site)
 * （待补充）
