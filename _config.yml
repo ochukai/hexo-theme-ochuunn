@@ -1,6 +1,6 @@
 # head
 menu:
-  目录: /archives
+  カタログ/（目录）: /archives
   # sitemap: /sitemap.xml
   # other menus
 
@@ -12,12 +12,14 @@ date_format: 'MMMM D, YYYY'
 google_verification: false  # your token
 google_analytics: false   # your id
 
-disqus_shortname: false   # your disqus name
+livere_id: 'city'
+livere_uid: 'your uid'
 
 start_year: 2016
 
-reward_images: 
-- type: '微信'
-  url: '/img/wechat.png'
+reward_images: # add your qr image
+# - type: '微信'
+#   url: '/img/wechat.png'
 # - type: '支付宝' 
 #   url: '/img/wechat.png'
+ 

@@ -10,7 +10,7 @@
 
 * Google Search Console
 * Google Analytics
-* Disqus
+* [LiveRe](https://livere.com/) (我去掉了disqus, 国内不翻墙压根连不上)
 * 打赏
 * 🎈 页面滚动快捷键 (j, k, t, b, n, m 具体功能自己尝试, console 有提示~)
 
