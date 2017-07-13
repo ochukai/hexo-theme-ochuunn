@@ -1,18 +1,15 @@
 # Ochuunn
 
 ## 特点
-文章界面很清晰，很适合阅读~
-
-## Demo
-[I am Oliver](http://ochukai.me)
-
-## Features
-
+* 文章界面很清晰，很适合阅读~
 * Google Search Console
 * Google Analytics
 * [LiveRe](https://livere.com/) (我去掉了disqus, 国内不翻墙压根连不上)
 * 打赏
 * 🎈 页面滚动快捷键 (j, k, t, b, n, m 具体功能自己尝试, console 有提示~)
+
+## Demo
+[I am Oliver](http://ochukai.me)
 
 # ⚠ 这里很重要 💢💥💖
 
@@ -21,6 +18,7 @@ npm install hexo-renderer-pug --save
 ```
 
 ## Install
+
 1. In the `root` directory:
 
 ```git
