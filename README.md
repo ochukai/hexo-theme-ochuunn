@@ -38,11 +38,3 @@ theme: ochuunn
 * 不支持 category，只有 tag
 
 (在目录的最下面， 是 hexo 的测试文章，按 b 键直达~)
-
-## 使用者列表
-
-(使用本主题之后，可以直接修改 README.md 文件，系统会自动提 pr 给我的，我来合并)
-
-* [I am Oliver](http://ochukai.me)
-* [Zacco's Blog](https://blog.zacco.site)
-* （待补充）
