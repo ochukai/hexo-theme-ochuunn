@@ -4,4 +4,4 @@ mixin gallery(post, index)
     div.gallery#gallery
       each item, index in post.photos
         - var className = index === 0 ? '' : 'u-hidden'
-        a(href = item, data-fancybox="gallery", group='oli-image-gallery' class = className): img(src = item, alt='featured-image')
+        a(href = item, data-fancybox="gallery", group='oli-image-gallery' class = className): img(src = url_for(item), alt='featured-image')

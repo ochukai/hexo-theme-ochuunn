@@ -33,7 +33,7 @@ $(function () {
                 "anim": {
                     "enable": false,
                     "speed": 1,
-                    "opacity_min": 0.2,
+                    "opacity_min": 0.1,
                     "sync": false
                 }
             },
@@ -51,7 +51,7 @@ $(function () {
                 "enable": true,
                 "distance": 250,
                 "color": "#40afaf",
-                "opacity": 0.3,
+                "opacity": 0.2,
                 "width": 1
             },
             "move": {
@@ -84,9 +84,9 @@ $(function () {
             },
             "modes": {
                 "grab": {
-                    "distance": 140,
+                    "distance": 100,
                     "line_linked": {
-                        "opacity": 1
+                        "opacity": 0.5
                     }
                 },
 
@@ -95,7 +95,7 @@ $(function () {
         "retina_detect": true
     });
 
-    var $particle = $('#particles-oli-wrapper').css({ display: 'none'}).removeClass('hide');
+    var $particle = $('#particles-oli-wrapper').css({ display: 'none' }).removeClass('hide');
     var $navH1 = $('.index-wrapper header h1, .index-wrapper header nav').hide();
 
     var $header = $('.index-wrapper .hide')
