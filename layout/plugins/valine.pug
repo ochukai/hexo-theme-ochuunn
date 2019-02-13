@@ -1,0 +1,7 @@
+if theme.livere_uid
+  div.comments#v-container
+    script(src="//cdn1.lncld.net/static/js/3.0.4/av-min.js")
+    script(src="//unpkg.com/valine/dist/Valine.min.js")
+    script.
+      new Valine({el: '#v-container', appId: theme.valine_appId, appKey: theme.valine_appKey})
+
