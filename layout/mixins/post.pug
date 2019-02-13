@@ -6,7 +6,7 @@ mixin post(post, index)
         a(href = url_for(post.path))
           time.post__time(datetime = date_xml(post.date))
             = date(post.date, theme.date_format)
-            
+
         h1.post__title.archive: a(href = url_for(post.path))
           = post.title
 
@@ -15,10 +15,10 @@ mixin post(post, index)
             != post.excerpt
 
     else
-      header.post__head  
-        include gallery.pug 
+      header.post__head
+        include gallery.pug
         +gallery(post)
-        
+
         time.post__time(datetime = date_xml(post.date))
           = date(post.date, theme.date_format)
 

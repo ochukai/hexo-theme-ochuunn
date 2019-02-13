@@ -7,6 +7,12 @@ block head
 block main
   include mixins/post.pug
   +post(page, 'post')
-  
+
+  //-
   include plugins/reward.pug
-  include plugins/livere.pug
+
+  //- comment
+  if theme.comment_plugin == 'valine'
+    include plugins/valine.pug
+  else
+    include plugins/livere.pug

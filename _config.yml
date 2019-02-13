@@ -10,16 +10,26 @@ favicon: /favicon.png
 date_format: 'MMMM D, YYYY'
 
 google_verification: false  # your token
-google_analytics: false   # your id
+google_analytics: false     # your id
 
-livere_id: 'city'
-livere_uid: 'your uid'
+# post comment
+comment_plugin: 'valine' # or livere
+# valine
+valine_appKey: ''
+valine_appId: ''
+# livere
+livere_id: ''
+livere_uid: ''
 
+# copyright
 start_year: 2016
+icp: false
+icp_link: 'http://www.beianbaba.com/icp/***'
 
-reward_images: # add your qr image
+# add your qr image
+reward_images:
 # - type: '微信'
 #   url: '/img/wechat.png'
-# - type: '支付宝' 
+# - type: '支付宝'
 #   url: '/img/wechat.png'
- 
+
