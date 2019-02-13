@@ -15,14 +15,14 @@ html(lang="zh-CN")
     footer.foot
       div.foot-copy
         if theme.start_year != date(new Date(), 'YYYY')
-          != '&copy; ' + theme.start_year + '-' + date(new Date(), 'YYYY') + ' ' + (config.author || config.title)
+          != '&copy; ' + theme.start_year + ' - ' + date(new Date(), 'YYYY') + ' ' + (config.author || config.title)
         else
           != '&copy; ' + date(new Date(), 'YYYY') + ' ' + (config.author || config.title)
 
         //- icp 备案信息
-        if icp && icp_link
-          a(href=icp_link, target="view_window", style="color:#fff")
-            != icp
+        if theme.icp_link
+          a(href=theme.icp_link, class="icp-a", target="view_window")
+            != theme.icp_text
 
     include ../plugins/google.pug
 

@@ -7,29 +7,41 @@ menu:
 rss: /atom.xml
 favicon: /favicon.png
 
-date_format: 'MMMM D, YYYY'
+date_format: "MMMM D, YYYY"
 
 google_verification: false  # your token
 google_analytics: false     # your id
 
 # post comment
-comment_plugin: 'valine' # or livere
-# valine
-valine_appKey: ''
-valine_appId: ''
+comment_plugin: false # valine or livere
+
+# valine https://valine.js.org/
+valine:
+  appId: ""
+  appKey: ""
+  notify: false
+  verify: false
+  avatar: "retro" # ''/mp/identicon/monsterid/wavatar/robohash/retro/hide
+  pageSize: 20
+  lang: "zh-cn"
+  placeholder: "balabala~"
+  avatarForce: false
+  visitor: true # 阅读量统计
+  highlight: true
+
 # livere
-livere_id: ''
-livere_uid: ''
+livere:
+  id: ""
+  uid: ""
 
 # copyright
 start_year: 2016
-icp: false
-icp_link: 'http://www.beianbaba.com/icp/***'
+icp_text: ""
+icp_link: ""
 
 # add your qr image
 reward_images:
-# - type: '微信'
-#   url: '/img/wechat.png'
-# - type: '支付宝'
-#   url: '/img/wechat.png'
-
+  - type: "微信"
+    url: "/img/wechat.png"
+  # - type: '支付宝'
+  #   url: '/img/wechat.png'

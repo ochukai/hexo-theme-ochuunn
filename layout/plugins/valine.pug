@@ -1,7 +1,20 @@
-if theme.valine_appId && theme.valine_appKey
+if theme.valine.appId && theme.valine.appKey
   div.comments#v-container
     script(src="//cdn1.lncld.net/static/js/3.0.4/av-min.js")
     script(src="//unpkg.com/valine/dist/Valine.min.js")
     script.
-      new Valine({el: '#v-container', appId: theme.valine_appId, appKey: theme.valine_appKey})
+      new Valine({
+        el: '#v-container',
+        appId: '#{theme.valine.appId}',
+        appKey: '#{theme.valine.appKey}',
+        avatar: '#{theme.valine.avatar}',
+        lang: '#{theme.valine.lang}',
+        placeholder: '#{theme.valine.placeholder}',
+        notify: #{theme.valine.notify},
+        verify: #{theme.valine.verify},
+        pageSize: #{theme.valine.pageSize},
+        avatarForce: #{theme.valine.avatarForce},
+        visitor: #{theme.valine.visitor},
+        highlight: #{theme.valine.highlight}
+      });
 
