@@ -1,10 +1,11 @@
-# Ochuunn
+# Ochuunn 1.0.1
 
 ## 特点
 * 文章界面很清晰，很适合阅读~
 * Google Search Console
 * Google Analytics
 * [LiveRe](https://livere.com/) (我去掉了disqus, 国内不翻墙压根连不上)
+* [Valine](https://valine.js.org/) (速度无敌，需要自己开一个 leancloud app，很简单，看文档吧，感谢 @[rubychat](https://github.com/rubychat))
 * 打赏
 * 🎈 页面滚动快捷键 (j, k, t, b, n, m 具体功能自己尝试, console 有提示~)
 
