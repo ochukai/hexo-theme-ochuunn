@@ -7,7 +7,7 @@ menu:
 rss: /atom.xml
 favicon: /favicon.png
 
-date_format: "MMMM D, YYYY"
+date_format: "YYYY - MM - DD"
 
 google_verification: false  # your token
 google_analytics: false     # your id
