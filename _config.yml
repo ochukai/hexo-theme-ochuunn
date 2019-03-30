@@ -43,5 +43,5 @@ icp_link: ""
 reward_images:
   - type: "微信"
     url: "/img/wechat.png"
-  # - type: '支付宝'
-  #   url: '/img/wechat.png'
+  - type: '支付宝'
+    url: '/img/alipay.png'
