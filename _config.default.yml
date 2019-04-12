@@ -1,0 +1,47 @@
+# head
+menu:
+  カタログ/（目录）: /archives
+  # sitemap: /sitemap.xml
+  # other menus
+
+rss: /atom.xml
+favicon: /favicon.png
+
+date_format: "YYYY - MM - DD HH:mm:ss"
+
+google_verification: false  # your token
+google_analytics: false     # your id
+
+# post comment
+comment_plugin: false # valine or livere
+
+# valine https://valine.js.org/
+valine:
+  appId: ""
+  appKey: ""
+  notify: false
+  verify: false
+  avatar: "retro" # ''/mp/identicon/monsterid/wavatar/robohash/retro/hide
+  pageSize: 20
+  lang: "zh-cn"
+  placeholder: "balabala~"
+  avatarForce: false
+  visitor: true # 阅读量统计
+  highlight: true
+
+# livere
+livere:
+  id: ""
+  uid: ""
+
+# copyright
+start_year: 2016
+icp_text: ""
+icp_link: ""
+
+# add your qr image
+reward_images:
+  - type: "微信"
+    url: "/img/wechat.png"
+  # - type: '支付宝'
+  #   url: '/img/wechat.png'

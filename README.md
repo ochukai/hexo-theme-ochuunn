@@ -1,4 +1,9 @@
-# Ochuunn 1.0.1
+# Ochuunn 1.0.2
+
+## 版本改动
+
+* 评论时不会触发页面滚动了
+* valine fork from [https://deserts.io/diy-a-comment-system/](https://deserts.io/diy-a-comment-system/), 文档看他的，但是他不支持头像随机，我改了，repo 在这里 [ochukai/valine](https://github.com/ochukai/Valine)
 
 ## 特点
 * 文章界面很清晰，很适合阅读~
@@ -26,6 +31,8 @@ npm install hexo-renderer-pug --save
 $ git clone https://github.com/ochukai/hexo-theme-ochuunn.git themes/ochuunn
 ```
 
+Change file `_config.default.yml` to `_config.yml`;
+
 2. Change the `theme` property in the `config.yml` file.
 
 ```yml
@@ -39,3 +46,4 @@ theme: ochuunn
 * 不支持 category，只有 tag
 
 (在目录的最下面， 是 hexo 的测试文章，按 b 键直达~)
+

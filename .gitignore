@@ -37,3 +37,7 @@ jspm_packages
 .node_repl_history
 
 *.bak.yml
+
+.DS_Store
+*.lock
+_config.yml
