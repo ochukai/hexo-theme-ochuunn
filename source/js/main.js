@@ -10,7 +10,7 @@ $(function () {
 	});
 
 	$('[data-fancybox]').fancybox({
-		// closeClickOutside: false, 
+		// closeClickOutside: false,
 		image: {
 			protect: true
 		}
@@ -25,10 +25,30 @@ $(function () {
 
 	// i  go index
 	var $body = $('html');
+	var unTriggerEles = [
+		'.veditor',
+		'.vnick',
+		'.vmail',
+		'.vlink',
+	];
 
 	var isKeydown = false;
 	$body.on('keydown', function (e) {
-		// console.log(e.which, 'key down');
+		// console.log(e.which, 'key down', e.target);
+
+		// 有些 input 或者 textarea 不应该触发这些快捷键
+		var $tar = $(e.target);
+		var needTrigger = true;
+		for (var i = 0; i < unTriggerEles.length; i++) {
+			if ($tar.is(unTriggerEles[i])) {
+				needTrigger = false;
+				break;
+			}
+		}
+
+		if (!needTrigger) {
+			return;
+		}
 
 		switch (e.which) {
 			case 74: // j down
