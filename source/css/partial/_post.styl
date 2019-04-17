@@ -7,7 +7,7 @@
   text-align: center
   margin-top: 20px
   background-color: #fff
-  
+
   .btn-reward
     padding: 10px 20px
     background-color: #399c9c
@@ -17,7 +17,7 @@
 
     &:hover
       background-color: $color-green-hover
-  
+
   .reward-wrapper
     margin-top: 20px
     display: none
@@ -32,7 +32,7 @@
   overflow: hidden
   margin-top: 30px
   border: 1px solid $border-color
-  background-color: $content-bg-color   
+  background-color: $content-bg-color
 
 .post__head
   margin: $margin-left-right
@@ -151,9 +151,9 @@
   margin-bottom: 45px
 
   a
-    display: inline-block 
+    display: inline-block
     width: 100%
-    
+
     &:focus
       outline: 0
 
@@ -167,43 +167,43 @@
   iframe
     width: 100%
     min-height: 320px
-   
 
-.queue-in 
+
+.queue-in
   animation-name: queue-in
   animation-duration: .3s
   animation-fill-mode: forwards
   animation-timing-function: ease-in
 
-.queue-out 
+.queue-out
   animation-name: queue-out
   animation-duration: .3s
   animation-fill-mode: forwards
   animation-timing-function: ease-out
 
 @keyframes queue-in {
-  from { 
+  from {
     // opacity: .5;
     // margin-left: 40px;
     transform: translateX(40px);
   }
-  
-  to { 
+
+  to {
     opacity: 1;
-    transform: translateX(0); 
+    transform: translateX(0);
   }
 }
 
 
 @keyframes queue-out {
-  from { 
+  from {
     opacity: 1;
     transform: translateX(0);
   }
-  
-  to { 
+
+  to {
     opacity: 0;
     display: none;
-    transform: translateX(40px); 
+    transform: translateX(40px);
   }
 }

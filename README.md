@@ -2,6 +2,15 @@
 
 ## 版本改动
 
+### 1.0.3
+
+* 滚动条颜色变浅
+* 代码高亮颜色变深
+* body 颜色深
+* 这个版本的文章更适合阅读~
+
+### 1.0.2
+
 * 评论时不会触发页面滚动了
 * valine fork from [https://deserts.io/diy-a-comment-system/](https://deserts.io/diy-a-comment-system/), 文档看他的，但是他不支持头像随机，我改了，repo 在这里 [ochukai/valine](https://github.com/ochukai/Valine)
 
