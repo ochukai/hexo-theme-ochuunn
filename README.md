@@ -6,6 +6,7 @@
 
 * 支持 MathJax
 * 页头加入 mathjax: true 便可以使用 MathJax 公式了~~~
+* 哦哦哦，还需要在 *_config.yml* 中，把 mathjax 设置为 true
 
 ### 1.0.3
 
