@@ -16,3 +16,7 @@ block main
     include plugins/valine.pug
   else
     include plugins/livere.pug
+
+  //- mathjax
+  if page.mathjax
+    include plugins/mathjax.pug

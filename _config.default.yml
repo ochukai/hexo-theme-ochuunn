@@ -15,6 +15,10 @@ google_analytics: false     # your id
 # post comment
 comment_plugin: false # valine or livere
 
+# mathjax
+mathjax: false # or true
+mathjax_cdn: //cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+
 # valine https://valine.js.org/
 valine:
   appId: ""

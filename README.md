@@ -1,6 +1,11 @@
-# Ochuunn 1.0.2
+# Ochuunn 1.0.4
 
 ## 版本改动
+
+### 1.0.4
+
+* 支持 MathJax
+* 页头加入 mathjax: true 便可以使用 MathJax 公式了~~~
 
 ### 1.0.3
 
