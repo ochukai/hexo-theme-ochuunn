@@ -111,23 +111,19 @@
     font-style: normal
 
   code
-    display: inline-block
     // ><code>
     // 排版无需空格, 使用半角空格宽度防止粘连 1em / 2 / 2
     // margin: 0 .25em
     // >[]<code></code>,
     // 排版须有空格, 1em 防止标点符号粘连
+    display: inline-block;
     margin: 0 .1em
-    padding: 0 .5em
-    border: 1px solid $border-color
-    border-radius: 3px
-    background-color: $background-color
-    text-shadow: 0 1px 0 #FFFFFF
     white-space: nowrap
     font-size: 0.85em
-    line-height: 1.1
-    vertical-align: text-bottom
     font-family: consolas, "微软雅黑"
+    border-radius: 4px
+    background-color: rgba(27,31,35,.05)
+    padding: 3px 6px
 
   kbd
     @extend .echo code
@@ -140,7 +136,7 @@
     border-right: 0
     border-top: 1px solid $border-color;
     border-bottom: 1px solid $border-color;
-    background-color: #fefefe;
+    background-color: #e1f4f4;
 
     &.right
       border-left: 0
