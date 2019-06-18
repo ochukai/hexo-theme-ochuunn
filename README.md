@@ -47,9 +47,9 @@ npm install hexo-renderer-pug --save
 $ git clone https://github.com/ochukai/hexo-theme-ochuunn.git themes/ochuunn
 ```
 
-Change file `_config.default.yml` to `_config.yml`;
+2. Change file `_config.default.yml` to `_config.yml`;
 
-2. Change the `theme` property in the `config.yml` file.
+3. Change the `theme` property in the `config.yml` file.
 
 ```yml
 # theme: landscape
