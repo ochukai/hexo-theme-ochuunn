@@ -30,7 +30,8 @@
 * 🎈 页面滚动快捷键 (j, k, t, b, n, m 具体功能自己尝试, console 有提示~)
 
 ## Demo
-[I am Oliver](http://ochukai.me)
+[I am Oliver](https://ochukai.github.io/)
+ochukai.me 最近解析到 git-pages 总是有问题~ 先不用了~
 
 # ⚠ 这里很重要 💢💥💖
 
