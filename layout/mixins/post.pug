@@ -1,40 +1,48 @@
 mixin post(post, index)
 
   article.post
-    if index === 'archive'
-      header.post__head.archive
-        a(href = url_for(post.path))
+  
+    if page.type === 'tags'
+      .tag-cloud
+        .tag-cloud__title= page.title  
+          |  - 
+          span.tag-cloud__amount= site.tags.length
+        .tag-cloud-tags!= tagcloud({min_font: 12, max_font: 30, amount: 200, color: true, start_color: '#9999ff', end_color: '#0790E8'})
+    else
+      if index === 'archive'
+        header.post__head.archive
+          a(href = url_for(post.path))
+            time.post__time(datetime = date_xml(post.date))
+              = date(post.date, theme.date_format)
+
+          h1.post__title.archive: a(href = url_for(post.path))
+            = post.title
+
+          if post.excerpt
+            div.excerpt
+              != post.excerpt
+
+      else
+        header.post__head
+          include gallery.pug
+          +gallery(post)
+
           time.post__time(datetime = date_xml(post.date))
             = date(post.date, theme.date_format)
 
-        h1.post__title.archive: a(href = url_for(post.path))
-          = post.title
+          h1.post__title: a(href = url_for(post.path))
+            = post.title
 
-        if post.excerpt
-          div.excerpt
-            != post.excerpt
+          if post.img
+            a.post__image(href = url_for(post.path)): img(src = url_for(post.img), alt = 'featured-image')
 
-    else
-      header.post__head
-        include gallery.pug
-        +gallery(post)
+          div.post__main.echo
+            != post.content
 
-        time.post__time(datetime = date_xml(post.date))
-          = date(post.date, theme.date_format)
-
-        h1.post__title: a(href = url_for(post.path))
-          = post.title
-
-        if post.img
-          a.post__image(href = url_for(post.path)): img(src = url_for(post.img), alt = 'featured-image')
-
-        div.post__main.echo
-          != post.content
-
-    if post.tags && post.tags.length > 0
-      footer.post__foot.u-cf
-        ul.post__tag.u-fl
-          -post.tags.forEach(function(tag) {
-            li.post__tag__item: a.post__tag__link(href = url_for(tag.path))
-              = tag.name
-          -})
+      if post.tags && post.tags.length > 0
+        footer.post__foot.u-cf
+          ul.post__tag.u-fl
+            -post.tags.forEach(function(tag) {
+              li.post__tag__item: a.post__tag__link(href = url_for(tag.path))
+                = tag.name
+            -})
