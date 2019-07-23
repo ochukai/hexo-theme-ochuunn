@@ -1,0 +1,7 @@
+mixin tags(title, count)
+  .tag-cloud
+    .tag-cloud__title.post__title
+      = title
+      span.tag-cloud__amount
+        = count
+    .tag-cloud-tags!= tagcloud({min_font: 14, max_font: 60, amount: count, color: true, start_color: '#c45e91', end_color: '#642545'})

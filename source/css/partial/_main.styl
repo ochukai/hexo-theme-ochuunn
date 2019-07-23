@@ -116,24 +116,25 @@
 
 .reward,
 .comments,
-.post
-  transition: all .3s
-
-  &:hover
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
-    border-color: transparent
+.post,
 .tag-cloud
   transition: all .3s
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 20px;
-  padding-top: 20px;
+
   &:hover
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
     border-color: transparent
 
-.tag-cloud__title
-  font-size: 2rem;
+.tag-cloud
+  border: 1px solid #f0f0f0;
+  padding: 20px;
+
+  .tag-cloud__title
+    font-size: font-size-rem(30)
+    margin-bottom: 30px;
+
+  .tag-cloud__amount
+    margin-left: 8px;
+
 .icp-a
   color: #fff
   display: inline-block

@@ -1,6 +1,7 @@
 # head
 menu:
-  カタログ/（目录）: /archives
+  标签: /tags
+  目录: /archives
   # sitemap: /sitemap.xml
   # other menus
 

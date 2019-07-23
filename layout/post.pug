@@ -5,8 +5,12 @@ block head
     = page.title + ' - ' + config.title
 
 block main
-  include mixins/post.pug
-  +post(page, 'post')
+  if page.type === 'tags'
+    include mixins/tags.pug
+    +tags('TAGS', site.tags.length)
+  else
+    include mixins/post.pug
+    +post(page, 'post')
 
   //-
   include plugins/reward.pug

@@ -1,6 +1,13 @@
-# Ochuunn 1.0.4
+# Ochuunn
+<p>
+  <img src="https://img.shields.io/badge/Ochuumm-1.1.0-red.svg?cacheSeconds=2592000" />
+</p>
 
 ## 版本改动
+
+### 1.1.0
+
+感谢 [zhufengning](https://github.com/zhufengning) 的 [pr #37](https://github.com/ochukai/hexo-theme-ochuunn/pull/37/commits/a62ab67c0fcc81f1957d00457ebf901dcdf4d489), 添加了一个 tags 云~ 好看~ (原谅我稍微改了一下 😅)
 
 ### 1.0.4
 
