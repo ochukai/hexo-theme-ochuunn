@@ -46,6 +46,14 @@ ochukai.me 最近解析到 git-pages 总是有问题~ 先不用了~
 npm install hexo-renderer-pug --save
 ```
 
+# ⚠ 关于tags（标签）页面
+
+需要手动在hexo的根目录下创建`tags`页：
+```sh
+hexo new page "tags"
+```
+然后在`index.md`中加上`type: "tags"`
+
 ## Install
 
 1. In the `root` directory:
